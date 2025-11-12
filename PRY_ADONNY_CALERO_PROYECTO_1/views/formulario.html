@@ -1,0 +1,106 @@
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Regístrate</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form action="servidor.html" method="get">
+
+                    <legend>NOMBRES:</legend>
+
+                    <label for="nombres">
+                        INGRESE SUS NOMBRES:
+                    </label>
+
+                    <input type="text" id="nombres" name="nombres" placeholder="Ejm. Adonny" maxlength="5" minlength="3"
+                        value="Adonny Calero" required>
+                    <hr>
+
+                    <legend>CORREO</legend>
+
+                    <label for="email">INGRESE SU EMAIL:</label>
+                    <input type="email" id="email" name="email" placeholder="Ejm.mateo@gmail"  value="mateo@gmail" required>
+
+                    <hr>
+
+                    <label for="clave">INGRESE SU CLAVE: </label>
+                    <input type="password" id="clave" name="clave" placeholder="**********" pattern ="(?=.*[A-Z])(?=.*[az])(?=.*\d)(?=.*[@$!%*?&]).{8,}">
+
+                    <label for="clave">Confirme SU CLAVE: </label>
+                    <input type="password" id="clave" name="clave" placeholder="**********" pattern ="(?=.*[A-Z])(?=.*[az])(?=.*\d)(?=.*[@$!%*?&]).{8,}">
+
+                    <hr>
+
+                    <LEgend>EDAD</LEgend>
+
+                    <label for="edad">INGRESE SU EDAD:</label>
+                    <input type="number" id="edad" name="edad" placeholder="Ejm. 25" min="10" max="100" required>
+
+                    <hr>
+
+                    <legend>Seleccione su pais</legend>
+
+                    <fieldset>
+                        <!-- SELECT PARA FORM -->
+                        <label for="pais">SELECCIONE SU Pais</label>
+                        <select name="pais" id="pais" required>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                        </select>
+                    </fieldset>
+
+                    <hr>
+
+                    <legend>Seleccione su sexo</legend>
+
+                    <label for=""> SELECIONE SU SEXO</label>
+
+                    <label for="hombre">HOMBRE</label>
+                    <input type="radio" id="hombre" name="sexo" value="HOMBRE">
+
+
+                    <label for="mujer">MUJER</label>
+                    <input type="radio" id="mujer" name="sexo" value="MUJER">
+
+                    <hr>
+
+                    <legend>CONDICIONES</legend>
+
+                    <label for="aceptar">ACEPTAR CONDICIONES: </label>
+                    <label for="aceptar">ACEPTO</label>
+                    <input type="checkbox" id="aceptar" name="aceptar" required>
+
+
+                    <label for="enviar">ENVIAR FORMULARIO</label>
+                    <input type="submit" id="enviar" name="enviar_formulario" value="ENVIAR FORMULARIO">
+
+                    <label for="limpiar">LIMPIAR FORMULARIO</label>
+
+                    <input type="reset" id="limpiar" name="limpiar_formulario" value="LIMPIAR FORMULARIO">
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
